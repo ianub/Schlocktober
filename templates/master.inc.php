@@ -41,6 +41,7 @@
               <li<?php if($page === "movies"):?> class="active" <?php endif; ?>><a href=".\?page=movies">Movies</a></li>
               <li<?php if($page === "merchandise"):?> class="active" <?php endif; ?>><a href=".\?page=merchandise">Merchandise</a></li>  
               <li<?php if($page === "contact"):?> class="active" <?php endif; ?>><a href=".\?page=contact">Contact</a></li>    
+              <li<?php if($page === "register"):?> class="active" <?php endif; ?>><a href=".\?page=register">Register</a></li>  
             </ul>      
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->

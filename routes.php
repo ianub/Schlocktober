@@ -1,8 +1,11 @@
 <?php
 
 namespace App\Controllers;
+
+  // If there is "page" in the address bar then $page = that page
+  // otherwise $page = home
   
-  $page = ! isset($_GET['page']) ? "home" : $_GET['page'];
+  $page = isset($_GET['page']) ? $_GET['page'] : "home";
 
   switch ($page) {
     
@@ -58,6 +61,18 @@ namespace App\Controllers;
 
       $controller = new MerchandiseController();
       $controller->showAll();
+      break;
+
+    case 'register':
+
+      $controller = new RegisterController();
+      $controller->show();
+      break;
+
+    case 'register.store':
+
+      echo '<pre>';
+      print_r($_POST);
       break;
 
     default:
